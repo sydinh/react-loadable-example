@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import CustomLoadable from '../components/CustomLoadable';
 import * as routes from '../constants';
+
 import Nav from '../components/Navigation';
+
 import NotFound from './NotFound';
 
 const LoadableLandingPage = CustomLoadable({
@@ -17,10 +20,11 @@ const LoadableContactPage = CustomLoadable({
   loader: () => import('./Contact'),
 });
 
-class App extends Component {
+
+class AppWithLoadable extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <main>
           <Nav />
           <Switch>
@@ -42,9 +46,9 @@ class App extends Component {
             />
           </Switch>
         </main>
-      </BrowserRouter>
+      </Router>
     )
   }
 }
 
-export default App;
+export default AppWithLoadable;
