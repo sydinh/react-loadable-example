@@ -41,9 +41,7 @@ class AppWithLoadable extends Component {
               path={routes.CONTACT}
               component={LoadableContactPage}
             />
-            <Route
-              component={NotFound}
-            />
+            <Route component={NotFound} />
           </Switch>
         </main>
       </Router>
