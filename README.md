@@ -1,19 +1,7 @@
 # react-loadable example
 
-Bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+## Quick start
 
-## Quick Start
-
-* `git clone git@github.com:sydinh/react-loadable-example.git`
-
-* `cd react-loadable-example`
-
-### To run
-
-* `yarn install`
-
-* `yarn start`
-
-### To build
-
-* `yarn build`
+* To install all dependencies, apply `npm install` or `yarn`.
+* To begin the development, run `npm start` or `yarn start`.
+* To create a production bundle, use `npm run build` or `yarn build`.
